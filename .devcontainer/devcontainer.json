@@ -13,7 +13,10 @@
 		"twxs.cmake",
 		"redhat.vscode-xml",
 		"actboy168.tasks",
-		"brpaz.file-templates"
+		"brpaz.file-templates",
+		"ms-iot.vscode-ros",
+		"yzhang.markdown-all-in-one",
+		"bierner.markdown-mermaid"
     ],
     //"appPort": [80],
 }
