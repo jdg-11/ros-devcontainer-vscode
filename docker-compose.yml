@@ -33,7 +33,7 @@ services:
     - "3001:3000"
     - "3002:8888"
     volumes:
-    - workspace:/workspace
+    - workspacesd2123:/workspace
     - ~/.gitconfig:/home/developer/.gitconfig
     environment:
     - DISPLAY=:0
@@ -44,4 +44,4 @@ services:
     depends_on:
     - xserver
 volumes:
-  workspace:
+  workspacesd2123:

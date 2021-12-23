@@ -27,7 +27,7 @@ RUN mkdir -p /opt/xsd/urdf && \
 
 FROM $BASE_IMAGE
 
-MAINTAINER Yosuke Matsusaka <yosuke.matsusaka@gmail.com>
+
 
 SHELL ["/bin/bash", "-c"]
 
@@ -140,7 +140,7 @@ RUN rosdep update
 # global vscode config
 ADD .vscode /home/developer/.vscode
 ADD .vscode /home/developer/.theia
-ADD .devcontainer/compile_flags.txt /home/developer/compile_flags.txt
+# ADD .devcontainer/compile_flags.txt /home/developer/compile_flags.txt
 ADD .devcontainer/templates /home/developer/templates
 RUN sudo chown -R developer:developer /home/developer
 
