@@ -163,7 +163,11 @@ RUN jupyter nbextension enable hinterland/hinterland && \
 # enter ROS world
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc
 
+
+
 EXPOSE 3000 8888
 
 ENTRYPOINT [ "/entrypoint.sh" ]
+
+
 CMD [ "sudo", "-E", "/usr/local/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]

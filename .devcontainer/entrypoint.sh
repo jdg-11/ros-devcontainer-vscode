@@ -20,4 +20,9 @@ source /opt/ros/$ROS_DISTRO/setup.bash
 
 cd /home/developer
 
+rm /home/developer/workspace/compile_flags.txt  || true 
+rm -rf /home/developer/workspace/src || true 
+rm /workspace/compile_flags.txt  || true 
+rm -rf /workspace/src || true
+
 exec $@
